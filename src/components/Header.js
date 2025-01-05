@@ -8,7 +8,7 @@ import MobileNav from './MobileNav';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  return <header className='pink'>Header</header>;
+  return <header className='bg-pink-200'>Header</header>;
 };
 
 export default Header;
