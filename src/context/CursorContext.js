@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {useState, useEffect, createContext, Children} from 'react';
 
-const CursorContext = () => {
-  return <div>CursorContext</div>;
+// create Context 
+const CursorContext = createContext(); 
+
+const CursorProvider = ({ children }) => {
+  return <CursorContext.Provider value={'this is the cursor context'}>
+    { children }
+  </CursorContext.Provider>;
 };
 
-export default CursorContext;
+export default Cursor;
