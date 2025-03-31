@@ -8,8 +8,11 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 //import motion 
 import { motion } from 'framer-motion';
+import { useContext } from 'react';
+import { CursorContext } from './context/CursorContext.js';
 
 const App = () => {
+  console.log(useContext(CursorContext));
   return (
     <>
       <Router>
